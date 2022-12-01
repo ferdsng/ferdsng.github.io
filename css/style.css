@@ -171,10 +171,13 @@ section.navigation {
     width: 100%;
     content: '';
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
     transform: scaleX(0); }
+    @media (max-width: 991px) {
+      .main-navigation ul.main-navigation-container li a::after {
+        display: none; } }
   .main-navigation ul.main-navigation-container li a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left; }
@@ -182,7 +185,7 @@ section.navigation {
 /*PROFILE*/
 section.profile {
   background: #141636;
-  padding: 40px 0;
+  padding: 48px 0;
   background-image: radial-gradient(#1a2c5a 5%, transparent 0);
   background-size: 40px 40px; }
 
@@ -208,11 +211,41 @@ section.profile {
     font-size: clamp(2rem, 5vw, 2.5rem);
     margin: 10px 0px 5px 0px;
     color: #fff; }
+    @media (max-width: 991px) {
+      .profile-description h1 {
+        text-align: center; } }
     .profile-description h1 span {
       background: linear-gradient(30deg, #ffbf02, #ed0082);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  .profile-description p {
+  .profile-description h2 {
     color: #fff;
     line-height: 1.5;
-    margin: 8px 0px; }
+    margin: 8px 0px;
+    font-size: 16px;
+    font-weight: normal; }
+    @media (max-width: 991px) {
+      .profile-description h2 {
+        text-align: center; } }
+
+/*WORKS*/
+.works {
+  padding: 32px 0; }
+  .works h3 {
+    color: #141636; }
+  .works p {
+    color: #222; }
+
+.section-title {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto; }
+  .section-title h1 {
+    background: linear-gradient(45deg, #3a7bd5 40%, #00d2ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin: 10px 0; }
+  .section-title p {
+    text-align: center; }
