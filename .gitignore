@@ -1,5 +1,6 @@
 #folders
 /sass
+/pug
 
 #files
 config.codekit3
