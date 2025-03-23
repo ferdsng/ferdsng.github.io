@@ -177,7 +177,7 @@ main {
 
 /*Navigation*/
 section.navigation {
-  background: #141636;
+  background: rgb(9, 35, 75);
   border-bottom: 1px solid rgb(21, 34, 83);
 }
 
@@ -248,8 +248,8 @@ section.navigation {
 section.profile {
   background: #141636;
   padding: 48px 0;
-  background-image: radial-gradient(rgb(26, 44, 90) 5%, transparent 0);
-  background-size: 36px 36px;
+  background-image: radial-gradient(rgb(25, 61, 124) 5%, transparent 0), linear-gradient(0deg, rgb(20, 51, 115) 0%, rgb(11, 42, 96) 58%, rgb(9, 35, 71) 100%);
+  background-size: 36px 36px, 100% 100%;
 }
 
 .profile-container {
@@ -293,7 +293,7 @@ section.profile {
 }
 .profile-description h2 {
   color: #fff;
-  line-height: 1.5;
+  line-height: 2;
   margin: 8px 0;
   font-size: 1.25rem;
   font-weight: normal;
@@ -324,11 +324,12 @@ section.profile {
   text-align: left;
 }
 .section-title h1 {
-  background: linear-gradient(45deg, #3a7bd5 0%, #00d2ff 100%);
+  background: linear-gradient(45deg, #0594dc 0%, #074e72 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: clamp(1.5rem, 3vw, 2rem);
   margin: 10px 0;
+  display: inline;
 }
 .section-title p {
   font-size: clamp(17.6px, 1vh, 20px);
@@ -353,10 +354,6 @@ section.profile {
   align-self: center;
   box-sizing: border-box;
   transition: width 200ms ease;
-}
-.projects-container article.projects-item a.project-item-container:hover {
-  width: 98%;
-  opacity: 0.9;
 }
 .projects-container article.projects-item a.project-item-container .project-text {
   width: 30%;
