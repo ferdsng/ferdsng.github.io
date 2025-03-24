@@ -366,20 +366,27 @@ section.profile {
   position: relative;
   border-radius: 16px;
   background: #f9f9f9;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 35% 1fr;
   overflow: hidden;
   width: 100%;
   height: auto;
-  justify-content: space-between;
-  align-self: center;
   box-sizing: border-box;
   transition: width 200ms ease;
   border: 1px solid #d5e2f7;
+  text-decoration: none;
+}
+@media (max-width: 991px) {
+  .projects-container article.projects-item a.project-item-container {
+    grid-template-columns: 1fr;
+  }
 }
 .projects-container article.projects-item a.project-item-container .project-text {
-  width: 30%;
   padding: 20px;
+}
+.projects-container article.projects-item a.project-item-container .project-text .project-title {
+  margin: 0;
+  color: #254791;
 }
 .projects-container article.projects-item a.project-item-container .project-image-container {
   width: auto;
