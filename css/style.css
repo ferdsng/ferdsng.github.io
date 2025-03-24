@@ -199,7 +199,7 @@ section.navigation {
   }
 }
 .main-navigation ul.main-navigation-container {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: stretch;
@@ -297,7 +297,7 @@ section.profile {
   }
 }
 .profile-description h1 {
-  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-size: clamp(1.5rem, 5vw, 2rem);
   margin: 10px 0px 5px 0px;
   color: #fff;
 }
@@ -344,7 +344,7 @@ section.profile {
   box-sizing: border-box;
   text-align: left;
 }
-.section-title h1 {
+.section-title h3 {
   background: linear-gradient(45deg, #0594dc 0%, #074e72 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -353,12 +353,13 @@ section.profile {
   display: inline;
 }
 .section-title p {
-  font-size: clamp(17.6px, 1vh, 20px);
+  font-size: clamp(16px, 1vh, 20px);
   line-height: 1.5;
 }
 
 /*PROJECTS*/
 .projects-container {
+  margin-top: 48px;
   padding: 0 16px;
   box-sizing: border-box;
 }
@@ -383,6 +384,8 @@ section.profile {
 }
 .projects-container article.projects-item a.project-item-container .project-text {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .projects-container article.projects-item a.project-item-container .project-text .project-title {
   margin: 0;
@@ -430,7 +433,7 @@ section.navigation-mobile nav ul.bottom-navigation li a {
   width: 100%;
 }
 section.navigation-mobile nav ul.bottom-navigation li a p {
-  font-size: 32px;
+  font-size: 24px;
   margin: 0;
 }
 section.navigation-mobile nav ul.bottom-navigation li a p span {
