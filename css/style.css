@@ -188,11 +188,22 @@ section.navigation {
   display: flex;
   align-items: center;
   width: 100%;
+  text-decoration: none;
 }
 @media (max-width: 991px) {
   .main-navigation a.logo {
     justify-content: center;
   }
+}
+.main-navigation a.logo img {
+  width: auto;
+  height: 42px;
+}
+.main-navigation a.logo span {
+  color: #fff;
+  font-weight: light;
+  margin-left: 16px;
+  font-size: 20px;
 }
 .main-navigation ul.main-navigation-container {
   width: 100%;
