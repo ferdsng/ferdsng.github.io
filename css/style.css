@@ -171,6 +171,13 @@ body {
   margin: 0 auto;
 }
 
+.imgfluid {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /*Navigation*/
 section.navigation {
   background: rgb(9, 35, 75);
@@ -455,6 +462,67 @@ section.profile {
   max-width: 100%;
   height: auto;
   width: auto;
+}
+
+/*About Me*/
+section.aboutme {
+  padding: 48px 0;
+  background: #f4f4f4;
+}
+section.aboutme .aboutme-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 100px;
+  padding: 0 16px;
+}
+@media (max-width: 991px) {
+  section.aboutme .aboutme-container {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+}
+section.aboutme .aboutme-container .aboutme-details p {
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+section.aboutme .aboutme-container .aboutme-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+section.aboutme .aboutme-container .aboutme-photos .photo-item-1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+section.aboutme .aboutme-container .aboutme-photos .photo-item-1 img {
+  width: 100%;
+  object-fit: cover;
+}
+section.aboutme .aboutme-container .aboutme-photos .photo-item-2 {
+  grid-column: 1/2;
+  grid-row: 3/5;
+}
+section.aboutme .aboutme-container .aboutme-photos .photo-item-2 img {
+  width: 100%;
+  object-fit: cover;
+}
+section.aboutme .aboutme-container .aboutme-photos .photo-item-3 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+section.aboutme .aboutme-container .aboutme-photos .photo-item-3 img {
+  width: 100%;
+  object-fit: cover;
+}
+section.aboutme .aboutme-container .aboutme-photos .photo-item-4 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+section.aboutme .aboutme-container .aboutme-photos .photo-item-4 img {
+  width: 100%;
+  object-fit: cover;
 }
 
 /*CONTACT*/
